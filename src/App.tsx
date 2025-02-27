@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css'
 
 function App() {
@@ -13,6 +13,11 @@ function povecajBroj(){
 function promeniIme(ev){
   setName(ev.target.value); //na svaku promenu texta promeni varjablu ime
 }
+
+useEffect (()=>{
+  console.log(number);
+}, [number])
+
   return (
   <>
   <button onClick={povecajBroj}>
