@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 interface ButtonProps {
   tip: string;
@@ -7,7 +7,6 @@ interface ButtonProps {
 }
 
 const Button = ({ tip, onClickButton, text }: ButtonProps) => {
-  console.log(tip);
 
   return (
     <button 
